@@ -1,0 +1,42 @@
+
+scalar LocalDateTime
+
+type Query {
+    generateQr(payeeInfo: PayeeInfoInput!): DynamicQuickResponse
+}
+
+"""
+Payee info input type
+"""
+input PayeeInfoInput {
+    """
+    Payee virtual payment address
+    """
+    pa: String
+    """
+    Merchant code
+    """
+    mc: String
+    """
+    Payee name
+    """
+    pn: String
+    """
+    Payment currency
+    """
+    cu: String
+}
+
+"""
+Response wrapper for qrcode
+"""
+type DynamicQuickResponse {
+    """
+    Base 64 encoded qrcode data
+    """
+    data: String
+    """
+    qrcode valid till timestamp
+    """
+    expiresAt: LocalDateTime
+}

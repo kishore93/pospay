@@ -1,0 +1,27 @@
+.QrFrame {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(254,243,189);
+    padding: 20px;
+    align-self: center;
+}
+
+.QrFrame-header {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.QrFrame-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}

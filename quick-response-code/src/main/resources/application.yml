@@ -1,0 +1,21 @@
+com:
+  epam:
+    qr-size:
+      default-size: LARGE
+      small: 290
+      medium: 330
+      large: 370
+
+dgs:
+  graphql:
+    schema-locations: classpath:graphql/schema.graphqls
+    graphiql:
+      enabled: true
+      path: /dev/graphiql
+
+#logging:
+#  level:
+#    com:
+#      netflix:
+#        graphql:
+#          dgs: DEBUG
