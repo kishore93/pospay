@@ -9,13 +9,3 @@ com:
 dgs:
   graphql:
     schema-locations: classpath:graphql/schema.graphqls
-    graphiql:
-      enabled: true
-      path: /dev/graphiql
-
-#logging:
-#  level:
-#    com:
-#      netflix:
-#        graphql:
-#          dgs: DEBUG
